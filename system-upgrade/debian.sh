@@ -13,6 +13,9 @@ __do_apt_upgrade(){
     apt upgrade -y
     apt dist-upgrade -y
     apt full-upgrade -y
+    apt autoclean
+    apt autoremove -y
+    cat /etc/debian_version
 }
 
 __do_debian10_upgrade(){
